@@ -14,7 +14,7 @@ object Boot extends App {
 
   while(true) {
     state.show
-    val nextValue = scanner.next()
+    val nextValue = scanner.nextLine()
     state = Command.from(nextValue).apply(state)
 
   }
